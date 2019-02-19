@@ -30,37 +30,61 @@
 <header id="header_site" class="fixed-top">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-2">
                 <a href="/index.html">
                     <img src="assets/images/logo.png" class="img-fluid" alt="">
                 </a>
             </div>
+            <div class="col-md-6">
+                <div class="d-flex align-items-center h-100 justify-content-end">
+                    <ul class="m-0 list-inline ff-bold fs-13">
+                        <li class="list-inline-item"><a href="">For Home Owners</a></li>
+                        <li class="list-inline-item"><a href="">For Professionals</a></li>
+                    </ul>
+                    <a href="" class="btn btn-blue ml-2 fs-13 ff-bold">Start New Project</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex align-items-center h-100">
+                    <ul class="m-0 list-inline ff-bold fs-13">
+                        <li class="list-inline-item"><a href="">Sign In</a></li>
+                        <li class="list-inline-item"><a href="">Download</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </header>
-<div class="banner">
+<div class="banner position-relative">
+    <div class="scroll_down">
+            <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
+
     <div class="container-fluid p-0">
         <div class="row ml-0 mr-0">
             <div class="col-md-8 pl-0 pr-0">
                 <img src="assets/images/banner.png" class="img-fluid" alt="">
             </div>
             <div class="col-md-4 pl-0 pr-0">
-                <div class="p-5">
-                    <form action="">
-                        <h3>Sign up</h3>
-                        <p>or <a href="">sign in to your account</a></p>
-                        <input type="text" class="form-control mb-2" placeholder="First name">
-                        <input type="text" class="form-control mb-2" placeholder="Last name">
-                        <input type="email" class="form-control mb-2" placeholder="Email">
-                        <input type="password" class="form-control mb-2" placeholder="Passwords">
-                        <p>This page is protected by reCAPTCHA, and subject to the Google Privacy Policy and Terms of
-                            service</p>
-                        <input type="checkbox" id="agree"> <label for="agree">I agree to the Homecca Term</label>
-                        <input type="submit" class="btn btn-block btn-info" value="Sign up">
-                        <a href="" class="btn btn-block btn-light">Sign up with Google</a>
-                        <a href="" class="btn btn-block btn-light">Sign up with Facebook</a>
-                    </form>
+                <div class="d-flex align-items-center h-100">
+                    <div class="p-5 fs-13">
+                        <form action="">
+                            <h3 class="fs-22">Sign up</h3>
+                            <p>or <a href="">sign in to your account</a></p>
+                            <input type="text" class="form-control mb-2" placeholder="First name">
+                            <input type="text" class="form-control mb-2" placeholder="Last name">
+                            <input type="email" class="form-control mb-2" placeholder="Email">
+                            <input type="password" class="form-control mb-2" placeholder="Passwords">
+                            <p>This page is protected by reCAPTCHA, and subject to the Google Privacy Policy and Terms of
+                                service</p>
+                            <input type="checkbox" id="agree"> <label for="agree">I agree to the <a href="">Homecca Term</a></label>
+                            <input type="submit" class="btn btn-block btn-blue" value="Sign up">
+                            <a href="" class="btn btn-block btn-white">Sign up with Google <img src="assets/images/google.svg" class="ml-2" alt=""></a>
+                            <a href="" class="btn btn-block btn-face">Sign up with Facebook <i class="fa fa-facebook-square fs-22 ml-2" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -68,12 +92,13 @@
 <!--End .banner-->
 
 <div class="build_share position-relative">
+    <div class="scroll_down">
+        <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
     <div class="bg_absolute">
         <div class="col-2p3 h-100 bg-blue">
-
         </div>
         <div class="col-1p3 h-100 bg-blue3">
-
         </div>
     </div>
     <div class="container">
@@ -81,13 +106,14 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="d-flex h-100 align-items-center">
-                        <div>
-                            <h2>
-                                Build
+                        <div class="text-white">
+                            <h2 class="fs-60 mb-3">
+                                Build <br>
                                 and Share
                             </h2>
-                            <p>It all starts with you. Add your details, invite project team members, and create your project
-                                timeline.</p>
+                            <div class="fs-18">It all starts with you. Add your details, <br>
+                                invite project team members, and <br>
+                                create your project timeline.</div>
                         </div>
                     </div>
                 </div>
@@ -100,6 +126,9 @@
 </div>
 <!--End .build_share-->
 <div class="professionals position-relative">
+    <div class="scroll_down cl-blue">
+        <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
     <div class="bg_absolute">
         <div class="col-1p3 h-100 bg-blue3">
 
@@ -116,12 +145,15 @@
                 </div>
                 <div class="col-md-4">
                     <div class="d-flex h-100 align-items-center">
-                        <div>
-                            <h2>
-                                Create with
+                        <div class="text-white">
+                            <h2 class="fs-60 mb-3">
+                                Create with <br>
                                 Professionals
                             </h2>
-                            <p>Get creating from whervever you are. Stay connect with designers, builders and trades as you share and manage your project.</p>
+                            <div class="fs-18">Get creating from whervever you are. <br>
+                                Stay connect with designers, builders <br>
+                                and trades as you share and manage <br>
+                                your project.</div>
                         </div>
                     </div>
                 </div>
@@ -130,7 +162,154 @@
     </div>
 </div>
 <!--End .professionals-->
+<div class="support position-relative">
+    <div class="scroll_down">
+        <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
+    <div class="bg_absolute">
+        <div class="col-2p3 h-100 bg-orange">
 
+        </div>
+        <div class="col-1p3 h-100 bg-orange1">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="min-vh-100 d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex h-100 align-items-center">
+                        <div class="text-white">
+                            <h2 class="fs-60 mb-3">
+                                Support for <br>
+                                the project <br>
+                                lifecycle
+                            </h2>
+                            <div class="fs-18">Homecca gives you all the mobile <br>
+                                project tools you need to manage <br>
+                                your project through to the end. <br>
+                                From task lists to cloud storage, keep <br>
+                                track of your project in real time.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <img src="assets/images/support.png" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End .support-->
+<div class="work position-relative">
+    <div class="scroll_down">
+        <a href=""><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+    </div>
+    <div class="bg_absolute">
+        <div class="col-1p3 h-100 bg-img">
+            <img src="assets/images/howtobg.png" class="img-fluid" alt="">
+        </div>
+        <div class="col-2p3 h-100 bg-blue">
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="min-vh-100 d-flex align-items-center">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="h-100 align-items-center d-flex text-uppercase text-white fs-60">
+                        <h2 class="fs-60">How <br>
+                            it works</h2>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <div class="d-flex h-100 align-items-center">
+                        <div class="row">
+                            <div class="col-2 mb-5">
+                                <img src="assets/images/buildicon.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 mb-5">
+                                <div class="text-white">
+                                    <h3 class="fs-29">BUILD</h3>
+                                    <div class="fs-18">Describe your dream home project <br>
+                                        by adding the type, size and <br>
+                                        location. Add photos and start <br>
+                                        tracking your project journey.</div>
+                                </div>
+                            </div>
+                            <div class="col-2 mb-5">
+                                <img src="assets/images/createicon.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 mb-5">
+                                <div class="text-white">
+                                    <h3 class="fs-29">CREATE</h3>
+                                    <div class="fs-18">Connect with your <br>
+                                        professionals. Share with your <br>
+                                        family and friends.</div>
+                                </div>
+
+                            </div>
+                            <div class="col-2 mb-5">
+                                <img src="assets/images/supporticon.svg" class="img-fluid" alt="">
+                            </div>
+                            <div class="col-10 mb-5">
+                                <div class="text-white">
+                                    <h3 class="fs-29">SUPPORT</h3>
+                                    <div class="fs-18">
+                                        Homecca provides the tools for <br>
+                                        you to manage your project <br>
+                                        from wherever you are.</div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End .work-->
+<div class="project text-center">
+    <a href="" class="btn btn-blue fs-22 ff-bold">Start New Project</a>
+</div>
+<!--End .project-->
+<footer id="footer_site" class="pt-5 pb-2">
+    <div class="container">
+        <div class="text-center">
+            <h4 class="fs-22 mb-4">Connect with us</h4>
+            <div class="social fs-29 mb-5">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href=""><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+            <div class="menu_ft mb-4">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="">About</a></li>
+                    <li class="list-inline-item"><a href="">FAQs</a></li>
+                    <li class="list-inline-item"><a href="">Privacy Policy</a></li>
+                    <li class="list-inline-item"><a href="">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="copyright fs-10">
+                COPYRIGHT © 2018 HOMECCA. ALL RIGHTS RESERVED. TERMS OF USE & PRIVACY POLICY
+            </div>
+                <div class="mt-3 im_bt">
+                    <img src="assets/images/fticon.png" class="img-fluid" alt="">
+                </div>
+        </div>
+    </div>
+</footer>
+<div class="chat_online">
+    <img src="assets/images/chaticon.png" class="img-fluid" alt="">
+</div>
+<!--Chat icon-->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->

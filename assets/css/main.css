@@ -1,6 +1,21 @@
-@media (min-width: 1366px) {
+@font-face {
+  font-family: 'Raleway-Bold';
+  src: url("../fonts/Raleway-Bold/Raleway-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Bold/Raleway-Bold.woff") format("woff"), url("../fonts/Raleway-Bold/Raleway-Bold.ttf") format("truetype"), url("../fonts/Raleway-Bold/Raleway-Bold.svg#Raleway-Bold") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Medium';
+  src: url("../fonts/Raleway-Medium/Raleway-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Medium/Raleway-Medium.woff") format("woff"), url("../fonts/Raleway-Medium/Raleway-Medium.ttf") format("truetype"), url("../fonts/Raleway-Medium/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Raleway-Regular';
+  src: url("../fonts/Raleway-Regular/Raleway-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Raleway-Regular/Raleway-Regular.woff") format("woff"), url("../fonts/Raleway-Regular/Raleway-Regular.ttf") format("truetype"), url("../fonts/Raleway-Regular/Raleway-Regular.svg#Raleway-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media (min-width: 1024px) {
   .container {
-    min-width: 1300px; } }
+    min-width: calc(100% - 50px); } }
 .bg-blue {
   background: #00aeef; }
 
@@ -10,6 +25,56 @@
 .bg-blue3 {
   background: #e5f7fd; }
 
+.ff-bold {
+  font-family: 'Raleway-Bold', Arial; }
+
+.ff-medium {
+  font-family: 'Raleway-Medium', Arial; }
+
+.ff-regular {
+  font-family: 'Raleway-Regular', Arial; }
+
+.fs-10 {
+  font-size: 10px; }
+
+.fs-13 {
+  font-size: 13px; }
+
+.fs-15 {
+  font-size: 15px; }
+
+.fs-18 {
+  font-size: 18px; }
+
+.fs-22 {
+  font-size: 22px; }
+
+.fs-29 {
+  font-size: 29px; }
+
+.fs-34 {
+  font-size: 34px; }
+
+.fs-60 {
+  font-size: 60px; }
+
+.fs-80 {
+  font-size: 80px; }
+
+.bg-orange {
+  background: #f9aa8e; }
+
+.bg-orange1 {
+  background: #feeee8; }
+
+.bg-img {
+  position: relative;
+  overflow: hidden; }
+  .bg-img img {
+    position: absolute;
+    min-height: 100%;
+    object-fit: cover; }
+
 .col-1p3 {
   width: calc(1 / 3 * 100%);
   float: left; }
@@ -18,9 +83,99 @@
   width: calc(2 / 3 * 100%);
   float: left; }
 
+body {
+  font-family: 'Raleway-Regular', Arial;
+  font-size: 14px; }
+  body h1, body h2, body h3, body h4 {
+    font-family: 'Raleway-Bold', Arial; }
+  body a {
+    color: #00aeef;
+    text-decoration: none;
+    outline: none; }
+    body a:hover {
+      text-decoration: none;
+      outline: none; }
+  body .form-control {
+    border-radius: 0;
+    font-size: 13px;
+    border: 1px solid #D0D2D3; }
+    body .form-control:focus {
+      box-shadow: none; }
+  body button:focus {
+    box-shadow: none; }
+  body .btn {
+    border-radius: 0;
+    padding: 12px 30px; }
+    body .btn:focus {
+      box-shadow: none; }
+    body .btn.btn-blue {
+      background: #00aeef;
+      color: #fff; }
+    body .btn.btn-white {
+      background: #fff;
+      border: 1px solid #D0D2D3; }
+    body .btn.btn-face {
+      background: #475993;
+      color: #fff; }
+
+#header_site {
+  padding: 10px 0;
+  background: rgba(0, 0, 0, 0.4); }
+  #header_site ul li a {
+    color: #fff;
+    padding-left: 15px;
+    padding-right: 15px; }
+
 .bg_absolute {
   width: 100%;
   height: 100%;
   position: absolute; }
+
+.project {
+  padding: 100px 0;
+  background: url("../images/bg.png") repeat-x left center/auto 100%; }
+
+.scroll_down {
+  position: absolute;
+  bottom: 25px;
+  left: 40px;
+  z-index: 999;
+  font-size: 24px;
+  height: 30px;
+  width: 30px;
+  border: 2px solid #fff;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 30px; }
+  .scroll_down a {
+    color: #fff; }
+  .scroll_down.cl-blue {
+    border: 2px solid #00aeef; }
+    .scroll_down.cl-blue a {
+      color: #00aeef; }
+
+#footer_site {
+  background: #FFF;
+  background: -moz-linear-gradient(to bottom, #FFF 20%, #61cdf5 100%);
+  background: -webkit-linear-gradient(to bottom, #FFF 20%, #61cdf5 100%);
+  background: linear-gradient(to bottom, #FFF 20%, #61cdf5 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FFF', endColorstr='#61cdf5',GradientType=1 ); }
+  #footer_site .im_bt img {
+    max-width: 50px; }
+  #footer_site a {
+    color: #000; }
+  #footer_site .social a {
+    margin: 0 10px; }
+  #footer_site .menu_ft a {
+    margin: 0 30px; }
+  #footer_site .copyright {
+    letter-spacing: 2px; }
+
+.chat_online {
+  position: fixed;
+  bottom: 25px;
+  right: 40px;
+  width: 60px;
+  cursor: pointer; }
 
 /*# sourceMappingURL=main.css.map */
