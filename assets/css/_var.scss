@@ -16,10 +16,19 @@
   font-weight: normal;
   font-style: normal;
 }
-
 @media(min-width: 1024px){
   .container{
     min-width: calc(100% - 50px);
+  }
+  .col-md-2ct{
+    -ms-flex: 0 0 calc(16.666667% + 5px);
+    flex: 0 0 calc(16.666667% + 5px);
+    max-width: calc(16.666667% + 5px);
+  }
+  .col-md-8ct{
+    -ms-flex: 0 0 calc(66.666667% - 10px);
+    flex: 0 0 calc(66.666667% - 10px);
+    max-width: calc(66.666667% - 10px);
   }
 }
 
@@ -103,4 +112,10 @@ $blue: #00aeef;
 .col-2p3{
   width: calc(2 / 3 * 100%);
   float: left;
+}
+
+@media (min-width: 768px) {
+  .col-md-2ct{
+
+  }
 }

@@ -42,7 +42,7 @@
                         <li class="list-inline-item"><a href="">About</a></li>
                         <li class="list-inline-item"><a href="">Contact Us</a></li>
                     </ul>
-                    <a href="" class="btn btn-blue ml-2 fs-13 ff-bold">Start New Project</a>
+                    <a href="new-project-1.html" class="btn btn-blue ml-2 fs-13 ff-bold">Start New Project</a>
                 </div>
             </div>
             <div class="col-md-3">
@@ -59,7 +59,7 @@
                         <li><a href="project.html"><img src="assets/images/projecticon.svg" class="img-fluid" alt="">My Project</a>
                         </li>
                         <li><a href=""><img src="assets/images/teamicon.svg" class="img-fluid" alt="">My Team</a></li>
-                        <li><a href=""><img src="assets/images/documenticon.svg" class="img-fluid" alt="">My
+                        <li><a href="document.html"><img src="assets/images/documenticon.svg" class="img-fluid" alt="">My
                             Document</a></li>
                         <li><a href=""><img src="assets/images/messagesicon.svg" class="img-fluid" alt="">My
                             Messages</a></li>
@@ -76,12 +76,13 @@
         <form action="">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="avatar mb-5">
-                        <img src="assets/images/avtpro.png" class="img-fluid" alt="">
-                    </div>
-                    <label class="ff-bold">Profile photo</label>
-                    <div>
-                        <input type="file">
+                        <div id="avatar" class="imgchoose img-square mb-5">
+                            <img src="assets/images/avtpro.png" class="img-fluid" alt="">
+                        </div>
+                        <label class="ff-bold">Profile photo</label>
+                    <div class="file-upload" data-change="avatar">
+                        <input type="file" id="choosefile" class="form-control">
+                        <p class="ibenic_file_upload_text">Upload</p>
                     </div>
                 </div>
                 <div class="col-md-8">
