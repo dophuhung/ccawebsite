@@ -76,13 +76,13 @@
         <form action="">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="avatar mb-5">
+                    <div id="avatar" class="avatar img-square mb-5">
                         <img src="assets/images/avtpro.png" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="col-md-8">
                     <h2 class="fs-34 cl-blue mb-5">
-                        Pro Profile
+                        My Profile
                     </h2>
 
                     <div class="row">
@@ -91,11 +91,12 @@
                             <input type="text" id="name" name="name" class="form-control b-bottom mb-5">
                             <label for="email" class="ff-bold">Email</label>
                             <input type="email" id="email" name="email" class="form-control b-bottom mb-5">
+                            <label class="ff-bold">Profile photo</label>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <label class="ff-bold">Profile photo</label>
-                                    <div>
-                                        <input type="file">
+                                    <div class="file-upload" data-change="avatar">
+                                        <input type="file" id="choosefile" class="form-control">
+                                        <p class="ibenic_file_upload_text">Upload</p>
                                     </div>
                                 </div>
                                 <div class="col-md-6">

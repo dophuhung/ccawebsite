@@ -60,6 +60,56 @@ var App ={
                 });
             });
         }
+    },
+    sidebarslide: function () {
+        if(jQuery('.slidesidebar').length){
+            jQuery('.slidesidebar').owlCarousel({
+                loop:true,
+                dots: false,
+                nav:true,
+                navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        }
+        if(jQuery('.slidebanner').length){
+            jQuery('.slidebanner').owlCarousel({
+                loop:true,
+                dots: true,
+                nav:false,
+                smartSpeed: 1000,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            });
+        }
+    },
+    uploadevent: function () {
+        if(jQuery('.btn-upload').length){
+            jQuery('.btn-upload').each(function () {
+                jQuery(this).click(function () {
+                    var $id = jQuery(this).data('upload');
+                    jQuery('#'+$id).trigger('click');
+                });
+            });
+        }
     }
 };
 jQuery(document).ready(function () {
@@ -67,4 +117,6 @@ jQuery(document).ready(function () {
     App.scrollhideform();
     App.scrollsmooth();
     App.addinput();
+    App.sidebarslide();
+    App.uploadevent();
 });

@@ -16,7 +16,7 @@
   font-weight: normal;
   font-style: normal;
 }
-@media(min-width: 1366px){
+@media(min-width: 1024px){
   .container{
     min-width: calc(100% - 120px);
   }
@@ -29,6 +29,18 @@
     -ms-flex: 0 0 calc(66.666667% - 50px);
     flex: 0 0 calc(66.666667% - 50px);
     max-width: calc(66.666667% - 50px);
+  }
+}
+@media (max-width: 767px) {
+  .col-md-2ct{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .col-md-8ct{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -69,16 +81,17 @@ $blue: #00aeef;
   font-size: 22px;
 }
 .fs-29{
-  font-size: 29px;
+  font-size: 25px;
 }
 .fs-34{
-  font-size: 34px;
+  font-size: 30px;
 }
 .fs-60{
-  font-size: 60px;
+  font-size: 50px;
 }
 .fs-80{
-  font-size: 80px;
+  font-size: 70px;
+  line-height: 75px;
 }
 .cl-gray{
   color: #58595b;

@@ -114,19 +114,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">COMMUNICATION HUB</a>
+                    <a class="nav-link" href="communication.html">COMMUNICATION HUB</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="project-detail.html">DETAILS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">DETAILS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TASK LIST</a>
+                    <a class="nav-link" href="task-list.html">TASK LIST</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">MY TEAM</a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">DOCUMENTS</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="document.html">DOCUMENTS</a>
                 </li>
             </ul>
         </div>
@@ -136,7 +136,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <div class="mt-5">
+                <div class="detail_project mt-5">
                     <div class="project-title mb-5">
                         <div class="ff-bold mb-3">
                             Project Title
@@ -168,7 +168,7 @@
                 </div>
             </div>
             <div class="col-md-9">
-                <div class="mt-5">
+                <div class="profile_change mb-5 mt-5">
                     <div class="ff-bold mb-3">
                         Project Short Description
                     </div>
@@ -180,23 +180,27 @@
                             <div class="ff-bold">
                                 Project Portfolio Image
                             </div>
-                            <div class="file-upload" data-change="avatar">
-                                <input type="file" id="choosefile" class="form-control">
+                            <div class="file-upload d-inline-block" data-change="avatar">
+                                <input type="file" id="chooseavt" class="form-control">
                                 <p class="ibenic_file_upload_text">Upload</p>
                             </div>
                             <a href="" class="btn btn-blue btn-sm">select</a>
-                            <img src="assets/images/avtpro.png" class="img-fluid" alt="">
+                            <div id="avatar">
+                                <img src="assets/images/avtpro.png" class="img-fluid" alt="">
+                            </div>
                         </div>
                         <div class="col-md-7">
                             <div class="ff-bold">
                                 Project Cover Image
                             </div>
-                            <div class="file-upload" data-change="avatar">
+                            <div class="file-upload d-inline-block" data-change="cover">
                                 <input type="file" id="choosefile" class="form-control">
                                 <p class="ibenic_file_upload_text">Upload</p>
                             </div>
                             <a href="" class="btn btn-blue btn-sm">select</a>
-                            <img src="assets/images/imgcover.png" class="img-fluid" alt="">
+                            <div id="cover">
+                                <img src="assets/images/imgcover.png" class="img-fluid" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
