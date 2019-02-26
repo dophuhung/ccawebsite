@@ -16,19 +16,19 @@
   font-weight: normal;
   font-style: normal;
 }
-@media(min-width: 1024px){
+@media(min-width: 1366px){
   .container{
-    min-width: calc(100% - 50px);
+    min-width: calc(100% - 120px);
   }
   .col-md-2ct{
-    -ms-flex: 0 0 calc(16.666667% + 5px);
-    flex: 0 0 calc(16.666667% + 5px);
-    max-width: calc(16.666667% + 5px);
+    -ms-flex: 0 0 calc(16.666667% + 25px);
+    flex: 0 0 calc(16.666667% + 25px);
+    max-width: calc(16.666667% + 25px);
   }
   .col-md-8ct{
-    -ms-flex: 0 0 calc(66.666667% - 10px);
-    flex: 0 0 calc(66.666667% - 10px);
-    max-width: calc(66.666667% - 10px);
+    -ms-flex: 0 0 calc(66.666667% - 50px);
+    flex: 0 0 calc(66.666667% - 50px);
+    max-width: calc(66.666667% - 50px);
   }
 }
 
