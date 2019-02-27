@@ -276,6 +276,10 @@ body {
   position: absolute;
   bottom: 20px;
   right: 15px; }
+  .slidebanner.owl-theme .owl-nav.disabled + .owl-dots .owl-dot span {
+    background: #fff; }
+  .slidebanner.owl-theme .owl-nav.disabled + .owl-dots .owl-dot:hover span, .slidebanner.owl-theme .owl-nav.disabled + .owl-dots .owl-dot.active span {
+    background: #2e3192; }
 
 .project {
   padding: 100px 0;

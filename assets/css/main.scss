@@ -234,6 +234,17 @@ body {
       position: absolute;
       bottom: 20px;
       right: 15px;
+      .owl-dot{
+        span{
+          background: #fff;
+        }
+        &:hover,
+        &.active{
+          span{
+            background: #2e3192;
+          }
+        }
+      }
     }
   }
 }
