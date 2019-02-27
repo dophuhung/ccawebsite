@@ -126,9 +126,53 @@ $blue: #00aeef;
   width: calc(2 / 3 * 100%);
   float: left;
 }
+.min-md-100{
+  min-height: 100vh;
+}
 
 @media (min-width: 768px) {
   .col-md-2ct{
 
+  }
+}
+
+@media (max-width: 767px) {
+  .fs-15{
+    font-size: 13px;
+  }
+  .fs-18{
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .fs-22{
+    font-size: 18px;
+  }
+  .fs-29{
+    font-size: 20px;
+  }
+  .fs-34{
+    font-size: 25px;
+  }
+  .fs-60{
+    font-size: 30px;
+  }
+  .fs-80{
+    font-size: 35px;
+    line-height: 40px;
+  }
+  .col-1p3{
+    width: 0;
+    float: left;
+  }
+  .col-2p3{
+    width: 100%;
+    float: left;
+  }
+  h2.fs-60{
+    margin: 10px 0 30px;
+  }
+  .min-md-100{
+    height: auto;
+    min-height: unset;
   }
 }

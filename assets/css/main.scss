@@ -43,12 +43,13 @@ body {
   button {
     &:focus {
       box-shadow: none;
+      outline: none;
     }
   }
 
   .btn {
     border-radius: 0;
-    padding: 12px 30px;
+    padding: 10px 20px;
 
     &:focus {
       box-shadow: none;
@@ -201,6 +202,16 @@ body {
     -o-transform: translateX(100%);
     transform: translateX(100%);
   }
+  @media (max-width: 767px) {
+    position: static;
+    &.scroll{
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
 }
 .bg_absolute {
   width: 100%;
@@ -247,6 +258,13 @@ body {
       }
     }
   }
+  @media (max-width: 767px) {
+    .item{
+      .meta-content{
+        padding: 0px 30px;
+      }
+    }
+  }
 }
 .project {
   padding: 100px 0;
@@ -276,6 +294,9 @@ body {
     a {
       color: $blue;
     }
+  }
+  @media (max-width: 767px) {
+    left: 15px;
   }
 }
 
@@ -327,6 +348,17 @@ body {
 .login-content {
   margin-top: 200px;
   margin-bottom: 150px;
+  .logingg,
+  .loginface{
+    margin: 0 5px;
+    img{
+      width: 40px;
+    }
+  }
+  @media (max-width: 767px) {
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
 }
 
 .cover-dashboard {
@@ -357,6 +389,9 @@ body {
       height: 100%;
       object-fit: cover;
     }
+  }
+  @media (max-width: 767px) {
+    padding-top: 150px;
   }
 }
 
@@ -471,6 +506,9 @@ body {
         font-family: 'Raleway-Bold', Arial;
       }
     }
+  }
+  @media (max-width: 767px) {
+    top: 66px;
   }
 }
 .step1,
@@ -617,6 +655,15 @@ body {
       .nav-link {
         font-family: 'Raleway-Bold', Arial;
       }
+    }
+  }
+  @media (max-width: 767px) {
+    .navbar-brand{
+      opacity: 0;
+    }
+    .navbar-toggler{
+      background-color: #fff;
+      border-radius: 0;
     }
   }
 }
@@ -906,6 +953,15 @@ body {
     height: 100%;
     background: #eee;
     left: -15px;
+  }
+  @media (max-width: 767px) {
+    .list-file{
+      .item-file{
+        -ms-flex: 0 0 calc(50% - 20px);
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+      }
+    }
   }
 }
 .detail-task{
