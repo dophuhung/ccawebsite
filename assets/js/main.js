@@ -110,6 +110,20 @@ var App ={
                 });
             });
         }
+    },
+    showmenumobile: function () {
+        if(jQuery('.menu-mobile').length){
+            jQuery('.menu-mobile').each(function () {
+               jQuery(this).click(function () {
+                  jQuery('.menu_mobile').toggleClass('showmenu');
+                  jQuery('.overlay_menu').toggleClass('showmenu');
+               });
+            });
+            jQuery('.overlay_menu').click(function () {
+                jQuery('.menu_mobile').removeClass('showmenu');
+                jQuery('.overlay_menu').removeClass('showmenu');
+            });
+        }
     }
 };
 jQuery(document).ready(function () {
@@ -119,4 +133,5 @@ jQuery(document).ready(function () {
     App.addinput();
     App.sidebarslide();
     App.uploadevent();
+    App.showmenumobile();
 });
